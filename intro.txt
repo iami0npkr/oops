@@ -1,0 +1,77 @@
+objected oriented programming
+
+1) objects are entities in the real world
+
+2) class is like a blueprint of these entities
+
+// access: modifiers
+// private,public,protected
+//private : default data& methods accessible inside class
+//public: : data&methods accessible to  everyone
+//protected: data&methods accessible inside class & to its derived class
+
+Encapsulation:
+
+Encapsulation is wrapping up of data & member functions in a single unit called class
+Encapsulation helps in data hiding of sensitive information using access modifiers.
+ 
+Constructor:
+
+Special method invoked automatically at the time of object creation. Used for Initialisation.
+
+Same name as class
+constructor doesn't have return type
+only called once (automatically), at object creation
+Memory allocation happens when constructor is called.
+
+
+Non-Parameterised constructor
+Parameterised Constructor
+Copy constructor
+
+Constructor Overloading :(example of polymorphism)
+We can have multiple constructor in same class, but should have different parameters.
+
+"this" is a special pointer in C++ that points to the current object.
+this->prop is same as *(this).prop 
+"this" is a pointer which points to address of the object when called.
+* is called dereferencing operator
+int *ptr = &x //ptr stores the address of x;
+*ptr is means ptr is dereferenced , it will gice the value stored in x;
+
+
+Copy Constructor:
+
+Special Constructor(default) used to copy properties of one object into another.
+
+Shallow & Deep Copy
+
+A shallow copy of an object copies all of the member values from one object to another.
+
+A deep copy, on the other hand, not only copies the member values but also makes copies of any dynamically allocated memory that the members point to.
+
+//generally variables are created in a stack memory.
+Static Allocation:
+
+Memory for variables is allocated at compile time.
+The size and type of memory required are known before the program runs.
+This memory is typically allocated on the stack or in the global data segment.
+
+
+Key Points of Dynamic Memory Allocation
+Flexibility:
+
+Memory can be allocated and deallocated as needed during program execution.
+This allows for handling variable-sized data structures and efficient memory usage.
+Functions and Operators:
+
+In C and C++, dynamic memory allocation is typically managed through functions like malloc, calloc, realloc, and free in C, and operators new and delete in C++.
+Other languages have their own mechanisms (e.g., new in Java, Python’s memory management).
+Heap Memory:
+
+Memory allocated dynamically usually comes from the heap, a region of memory used for dynamic allocation.
+The size of the heap can grow or shrink during program execution.
+Manual Management:
+
+In languages like C and C++, programmers are responsible for explicitly allocating and deallocating memory.
+Failing to deallocate memory can lead to memory leaks, while deallocating memory incorrectly can cause undefined behavior.
