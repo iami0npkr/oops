@@ -9,3 +9,19 @@ example: constructor overloading
 COMPILE TIME POLYMORPHISM(statically ho jatha h)
 1)constructor overloading(same constructor name but different parameters)
 2)function overloading(same function name but different parameters inside a class)
+
+RUN TIME POLYMORPHISM(dynamic polymorphism)
+
+1) function overriding
+Parent and child contain the same function with different 
+implementation,child class given more priority
+The parent class function is said to be overridden
+
+overloading(in same class) vs overriding(due to inheritance)
+
+2)Virtual functions
+
+A virtual function is a member function that you expect to be redefined in derived classes.
+Virtual function are dynamic in nature
+Defined by the keyword "virtual" inside a base class and are always declared with a base class and overridden in a child class.
+a virtual function is called during Runtime
