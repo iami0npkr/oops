@@ -78,4 +78,34 @@ Failing to deallocate memory can lead to memory leaks, while deallocating memory
 
 default copy constructor also do shallow copy
 
+deep copy : create a custom copy constructor with dynamic memory Allocation
 
+DESTRUCTOR:
+Deallocate the memory
+opposite of constructor
+~className(){
+
+}
+default destructor only deletes static memory;
+** imp: delete ptr: does not delete the pointer, it deletes/frees the member it is pointing to.
+
+
+INHERITANCE:
+
+when properties & member functions of base class are passed on to the derived classes.
+parents passing its quaities to its child
+base class(parent class) passing its members & member functions to its derived class(child class).
+//it is used for code reusability
+
+
+when a child object is created, first the constructor of parent class will be called and then child class constructor ;
+when memory is deallocated first child object memory deallocated and then parent object memory deallocated;
+
+MODE OF INHERITANCE (SEE PIC)
+
+sometimes we want to inherit the private properties of parent class but we cannot do that as private properties are non inheritable.
+at this time we make thos private properties into protected properties inorder to make the inheritance possible
+
+TYPES OF INHERITANCE
+
+Single Inheritance: Passing properties from single parent to single child.

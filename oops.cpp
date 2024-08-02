@@ -87,9 +87,22 @@ public:
     }
 
     Student(Student &obj)
-    {
+    {   //shallow copy
         this->name = obj.name;
         this->cgpaPtr = obj.cgpaPtr;
+    }
+    Student(Student &obj, bool deepcopy){
+        //deep copy
+        this->name=obj.name;
+        this->cgpaPtr= new double;
+        *cgpaPtr=*(obj.cgpaPtr);
+
+    }
+
+    //destructor(same name as class)
+    ~Student(){
+       cout<<"Hi, I delete everything\n";
+       delete cgpaPtr;
     }
 
     void getInfo()
@@ -131,11 +144,13 @@ int main()
     //     cout<<t1.dept<<endl;
 
     Student s1("rahul kumar", 8.9);
-    Student s2(s1); //"neha kumar"
+    Student s2(s1,true); //"neha kumar"
     s1.getInfo();
     *(s2.cgpaPtr)=9.2;
     s1.name="ram";
     s1.getInfo(); 
     s2.getInfo();
+    *(s2.cgpaPtr)=10.0;
+    s2.getInfo(); 
     return 0;
 }

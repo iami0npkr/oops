@@ -1,0 +1,11 @@
+POLYMORPHISM 
+Polymorphism is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used.
+
+example: constructor overloading
+
+1) compile time Polymorphism
+2) Runtime polymorphism
+
+COMPILE TIME POLYMORPHISM(statically ho jatha h)
+1)constructor overloading(same constructor name but different parameters)
+2)function overloading(same function name but different parameters inside a class)
