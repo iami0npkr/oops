@@ -81,8 +81,9 @@ public:
     {
         this->name = name;
         //this->cgpa = cgpa;
-        cgpaPtr = new double;
-        *cgpaPtr = cgpa;
+        // cgpaPtr = new double;
+        // *cgpaPtr = cgpa;
+        cgpaPtr=&cgpa;
     }
 
     Student(Student &obj)
@@ -130,9 +131,11 @@ int main()
     //     cout<<t1.dept<<endl;
 
     Student s1("rahul kumar", 8.9);
-    Student s2(s1);
+    Student s2(s1); //"neha kumar"
     s1.getInfo();
     *(s2.cgpaPtr)=9.2;
-    s1.getInfo();
+    s1.name="ram";
+    s1.getInfo(); 
+    s2.getInfo();
     return 0;
 }

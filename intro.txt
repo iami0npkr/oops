@@ -75,3 +75,7 @@ Manual Management:
 
 In languages like C and C++, programmers are responsible for explicitly allocating and deallocating memory.
 Failing to deallocate memory can lead to memory leaks, while deallocating memory incorrectly can cause undefined behavior.
+
+default copy constructor also do shallow copy
+
+
